@@ -20,7 +20,6 @@ let html = "";
 fetch(rickAndMortySeriesInformationId)
     .then(response => response.json())
     .then((jsonData) => {
-        document.title = jsonData.name;
         createdCharacterInformationDetails(jsonData)
     })
     .catch(error => {
