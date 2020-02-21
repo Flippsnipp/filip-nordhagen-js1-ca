@@ -14,7 +14,7 @@ fetch(rickAndMortySeriesInformation)
 function createdCharacterInformation (data) {
     data.forEach(function(output) {
         if (!output.type){
-            output.type = "unknown"
+            output.type = "Unknown";
         }
         html += `
                     <div class="col-sm-6 col-md-4 col-lg-3">                
